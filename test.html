@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="javascript.js" ></script>
+
+<head>
+</head>
+
+<body style="padding-top:70px;">
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-2">
+
+    <input type="text" id="txtPlaca" placeholder="Placa" style="padding:5px; margin:10px; width:300px;"/>
+    <br>
+    <input type="text" id="txtMarca" placeholder="Marca" style="padding:5px; margin:10px; width:300px;" />
+    <br>
+    <input type="text" id="txtColor" placeholder="Color" style="padding:5px; margin:10px; width:300px;" />
+    <br>
+    <input type="text" id="txtModelo" placeholder="Modelo" style="padding:5px; margin:10px; width:300px;" />
+    <br>
+    <input type="number" id="txtPrecio" placeholder="Precio" style="padding:5px; margin:10px; width:300px;" />
+
+
+
+  </div>
+  <div class="col-md-4 col-md-offset-2">
+    <button  id="btnNuevo" style="width:100px; padding:5px; margin:10px;">Nuevo</button>
+    <br/>
+    <button  id="btnAgregar" style="width:100px; padding:5px; margin:10px;" disabled="disabled">Agregar</button>
+     <br/>
+    <button  id="btnModificar" style="width:100px; padding:5px; margin:10px;" hidden="true">Modificar</button>
+  </div>
+
+</div>
+<div class="row" style="margin-top:20px;">
+  <div class="col-md-6 col-md-offset-3">
+    <table class="table table-bordered" id="table">
+      <thead>
+        <tr>
+          <td>Placa</td>
+          <td>Marca</td>
+          <td>Color</td>
+          <td>Modelo</td>
+          <td>Precio</td>
+	  <td>Opciones</td>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+  </div>
+</div>
+
+</body>
+
+</html>

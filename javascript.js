@@ -3,7 +3,8 @@ var vehiculos = [];
 var currentModPosicion;
 
 $(document).ready(function(){
-vehiculos = JSON.parse(localStorage.getItem('data'));
+  if(JSON.parse(localStorage.getItem('data')))
+    vehiculos = JSON.parse(localStorage.getItem('data'));
 
 update();
 unableTexts();
@@ -128,9 +129,9 @@ function unableTexts(){
 }
 
 function vehiculo(placa,marca,modelo,color,precio){
-this.placa = placa;
-this.marca = marca;
-this.modelo = modelo;
-this.color = color;
-this.precio = precio
+  this.placa = placa;
+  this.marca = marca;
+  this.modelo = modelo;
+  this.color = color;
+  this.precio = precio
 }
